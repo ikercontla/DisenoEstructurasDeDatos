@@ -1,0 +1,10 @@
+11:34:37 **** Incremental Build of configuration Debug for project EjercicioClase3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase3.o "..\\EjercicioClase3.c" 
+..\EjercicioClase3.c:41:7: warning: 'length' defined but not used [-Wunused-function]
+  void length(int arr[]){
+       ^~~~~~
+gcc -o EjercicioClase3.exe EjercicioClase3.o 
+
+11:34:38 Build Finished. 0 errors, 1 warnings. (took 900ms)
+

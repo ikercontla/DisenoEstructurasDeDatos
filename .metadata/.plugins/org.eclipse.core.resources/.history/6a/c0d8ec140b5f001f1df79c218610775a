@@ -1,0 +1,17 @@
+/*
+ * EjercicioClase3.h
+ *
+ *  Created on: 20 ago. 2024
+ *      Author: iker.contla
+ */
+
+#ifndef EJERCICIOCLASE3_H_
+#define EJERCICIOCLASE3_H_
+
+class EjercicioClase3 {
+public:
+	EjercicioClase3();
+	virtual ~EjercicioClase3();
+};
+
+#endif /* EJERCICIOCLASE3_H_ */

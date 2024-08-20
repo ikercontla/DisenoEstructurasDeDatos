@@ -1,0 +1,26 @@
+/*
+ * EjercicioClase3.c
+ *
+ *  Created on: 20 ago. 2024
+ *      Author: iker.contla
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+	// Crea una variable p1 que apunte a un numero real de 64 bits r1 cuyo valor inicial es -7.528
+
+	double r1 = -7.528;
+	double* p1 = &r1;
+
+	printf("%c\n", p1);
+	printf("%c\n", &p1);
+
+
+
+}
+
+
