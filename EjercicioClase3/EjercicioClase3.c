@@ -9,7 +9,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int length(char* myString) {
+		/*
+		int i = 0;
+		while (s[i] != '\0') {
+			i++;
+		}
+		return i;
+		*/
+		int count = 0;
+		while (*myString != '\0') {
+			count ++;
+			myString ++;
+		}
+
+		return count;
+	}
 int main() {
+
+
+	char miCadena = "Hola Mundo";
+	printf("la longitud de la cadena es: ". length(miCadena));
 
 	// Crea una variable p1 que apunte a un numero real de 64 bits r1 cuyo valor inicial es -7.528
 
@@ -38,12 +58,9 @@ int main() {
 
 	printf("%hi %hi\n", a1[2], a1[3]);
 
-	void length(int arr[]){
-
 	}
 
 	return 0;
-}
 
 
 
