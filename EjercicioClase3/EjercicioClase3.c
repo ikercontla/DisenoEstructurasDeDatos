@@ -8,7 +8,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
+//Ejercicio 1
 int length(char* myString) {
 		/*
 		int i = 0;
@@ -24,12 +26,36 @@ int length(char* myString) {
 		}
 
 		return count;
-	}
+}
+
+//Ejercicio 2
+
+//La funcion swap recibe 2 apuntadores
+void swap(int* a, int* b)
+{
+	int temp = *a; //Almacenamos en una variable temporal el apuntador a
+	*a = *b; //En el apuntador a almacenamos el apuntar b
+	*b = temp; //Ahora en el apuntador b almacenamos lo que estaba en la variable temp
+}
+
+//Ejercicio 3
+
+typedef struct {
+	float x;
+	float y;
+}Vec2D;
+
+void toUnit(Vec2D* v){
+
+	float magnitud = sqrt(pow(v->x, 2) + pow(v->y, 2));
+	v->x = v->x/magnitud;
+	v->y = v->y/magnitud;
+
+
+}
+
 int main() {
 
-
-	char miCadena = "Hola Mundo";
-	printf("la longitud de la cadena es: ". length(miCadena));
 
 	// Crea una variable p1 que apunte a un numero real de 64 bits r1 cuyo valor inicial es -7.528
 
@@ -58,33 +84,31 @@ int main() {
 
 	printf("%hi %hi\n", a1[2], a1[3]);
 
-<<<<<<< HEAD
+	//Ejercicio 1
 
-	// Ejercicio de verdad
+	// char miCadena = "Hola Mundo";
+	// printf("la longitud de la cadena es: ". length(miCadena));
 
-int length(char* myString) {
+	// Ejercicio 2
 
-	int count = 0;
-	while (*myString != '\0'){
-		count++;
-		myString++;
+	int x = 35;
+	int y = 40;
 
-	}
+	swap(&x, &y);
 
-	return count;
+	printf("x: %d, y: %d\n,", x, y);
 
-	/* int i = 0;
-		while (s[i] != '\0') {
-			i++;
-		}
-		return i;
-		*/
+	//Ejercicio 3
 
-=======
->>>>>>> fda50336f9fd0793b154eabe607c2f76b321a6a4
-	}
+	Vec2D miVector = {3.0, 4.0};
+	Vec2D miVectorApuntador = &miVector;
+	toUnit(&miVectorApuntador);
 
-	return 0;
+	printf("Vector Unitario: %.2f, %.2f\n", miVector.x, miVector.y);
+
+}
+
+
 
 
 
