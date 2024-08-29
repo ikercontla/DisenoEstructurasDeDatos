@@ -101,7 +101,7 @@ int main() {
 	//Ejercicio 3
 
 	Vec2D miVector = {3.0, 4.0};
-	Vec2D miVectorApuntador = &miVector;
+	Vec2D miVectorApuntador = miVector;
 	toUnit(&miVectorApuntador);
 
 	printf("Vector Unitario: %.2f, %.2f\n", miVector.x, miVector.y);
