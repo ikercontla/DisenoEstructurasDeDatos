@@ -40,11 +40,15 @@ de la suma de los primeros dos flotantes al tercero. */
 	//imprimimos para verificar que este bien
 	printf("Ejercicio 1\n myFloat1: %.1f\n myFloat2: %.2f\n myFloat3: %.2f\n", myFloat1, myFloat2, myFloat3);
 
+
+
 	/*Aritmética de apuntadores
 	Desarrolle una función incrementArray que reciba un arreglo de enteros y un entero
 	N que indique su tamaño. La función deberá incrementar en 1 el valor de cada
 	elemento del arreglo. No emplee notación de corchetes para resolver este problema
 	(use aritmética de apuntadores para acceder a los elementos). */
+
+	//nota: un arreglo es un apuntador
 
 	//funcion incrementArray que no regresa nada
 	void incrementArray(int array[], int n){ //la funcion recibe un arreglo de enteros y un entero n que determina el tamano del arreglo
@@ -61,6 +65,17 @@ de la suma de los primeros dos flotantes al tercero. */
 			printf("Ejercicio2\n %d ", array[i]);
 		}
 	}//fin funcion printArray
+
+	//creamos un arreglo
+	int myArray[] = {1, 2, 3, 4};
+
+	//le aplicamos la funcion incrementArray
+	incrementArray(myArray, 4);
+
+	//lo imprimimos
+	printArray(myArray, 4);
+
+
 
 	/*Apuntadores a funciones
 	Dada la siguiente función,
@@ -82,8 +97,9 @@ de la suma de los primeros dos flotantes al tercero. */
 	int (*myFunctionPointer)(int, int) = add; //estructura del apuntdaor a funcion
 											//primer int se refiere al tipo de dato que devuelve la funcion
 											//(*myFunctionPointer) nombre del apuntador no olvidar el asterisco
-											//(int, int) tipos de datos que recibe la funcion
+											//(int, int) tipos de datos que recibe la funcion (void en caso de no regresar nada)
 											//= add; guarda la funcion en el apuntador a funcion
+
 
 	//declaramos una variable de tipo entero mySum y le asignamos el resultado de una llamada a la funcion con los parametros 5 y 7
 	//tenemos que llamar la funcion a traves del apuntador
