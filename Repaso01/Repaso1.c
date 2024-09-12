@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <math.h>
 
+//Definimos estrucutra Vec2D
 typedef struct {
 	float i, j;
 }Vec2D;
@@ -106,6 +107,8 @@ de la suma de los primeros dos flotantes al tercero. */
 	int mySum = myFunctionPointer(5, 7);
 	printf("Ejercicio 3\n la suma es: %d", mySum); //imprimimos la suma para verificar que lo hicimos bien
 
+
+
 	/*Apuntadores a estructuras
 	Defina una estructura Vec2D que tenga dos atributos de tipo float: i y j.
 	Implemente una función printVec2D que reciba un apuntador a Vec2D e imprima el
@@ -130,8 +133,8 @@ de la suma de los primeros dos flotantes al tercero. */
 	un valor y llame a la función powInPlace para él, elevándolo a la potencia 5.*/
 
 	//funcion powInPlace
-	void powInPlace(int * x, int y){ //el apuntador a i sera un entero que desea elevarse a una potencia
-									// el entero j sera la potencia a la que sera elevado
+	void powInPlace(int * x, int y){ //el apuntador a x sera un entero que desea elevarse a una potencia
+									// el entero y sera la potencia a la que sera elevado
 
 		int numeroGuardado = *x; //guardamos el valor de x en una variable aparte para que podamos ir multiplicando x por esa variable guardada
 		for (int i = 0; i<y-1; i++){
@@ -155,12 +158,7 @@ de la suma de los primeros dos flotantes al tercero. */
 
 	//declaramos cuatro variables de tipo Vec2D y les asignamos valores
 	Vec2D myVector1 = {1,2};
-	Vec2D myVector2 = {3,4};
-	Vec2D myVector3 = {5,6};
-	Vec2D myVector4 = {7,8};
-	//declaramos cuatro variables de tipo flotante
-	float myFloat1, myFloat2, myFloat3, myFloat4;
-
+	Vec2D myVector2 = {3,4};https://github.com/ikercontla/DisenoEstructurasDeDatos.git
 	//creamos dos arreglos de apuntadores para almacenar las direcciones d elas variables Vec2D y float
 	Vec2D * myVectorPointerArray[] = { &myVector1, &myVector2, &myVector3, myVector4 };
 	float * myFloatPointerArray[] = { &myFloat1, &myFloat2, &myFloat3, &myFloat4 };
