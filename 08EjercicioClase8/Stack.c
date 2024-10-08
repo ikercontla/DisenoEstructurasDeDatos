@@ -44,7 +44,7 @@ Type stack_top(Stack s) {
 
 void stack_push(Type e, Stack s) {
 	//creamos un nuevo nodo
-	Node n = (Node) malloc(sizeof(struct strNode*));
+	Node n = (Node) malloc(sizeof(struct strNode));
 	//asignamos el dato "e" al nodo
 	n->data = e;
 	//asignamos al prior del nodo creado el nodo que antes era top
