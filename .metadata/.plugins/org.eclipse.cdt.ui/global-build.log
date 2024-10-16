@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 16:10:54 **** Incremental Build of configuration Debug for project Repaso02 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o repaso.o "..\\repaso.c" 
@@ -93,3 +94,46 @@ C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:502:16: note: previous declaratio
 ..\repaso.c:89:17: error: unknown type name 'Queue'
  char queue_poll(Queue q) {
                  ^~~~~
+=======
+11:51:08 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
+..\UseStack.c: In function 'main':
+..\UseStack.c:19:2: error: expected ',' or ';' before 'for'
+  for (int i = 0; i < 5;  i++ ) {
+  ^~~
+..\UseStack.c:19:18: error: 'i' undeclared (first use in this function)
+  for (int i = 0; i < 5;  i++ ) {
+                  ^
+..\UseStack.c:19:18: note: each undeclared identifier is reported only once for each function it appears in
+..\UseStack.c:19:30: error: expected ';' before ')' token
+  for (int i = 0; i < 5;  i++ ) {
+                              ^
+..\UseStack.c:19:30: error: expected statement before ')' token
+..\UseStack.c:17:7: warning: unused variable 'myCharArray' [-Wunused-variable]
+  char myCharArray[] = { 'a', 'b', 'c', 'd', 'e' }
+       ^~~~~~~~~~~
+..\UseStack.c:14:8: warning: unused variable 'myCharStack' [-Wunused-variable]
+  Stack myCharStack = stack_create();
+        ^~~~~~~~~~~
+10:28:07 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
+gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
+10:29:17 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
+gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
+10:32:12 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
+..\UseStack.c: In function 'main':
+..\UseStack.c:31:50: warning: format '%c' expects a matching 'int' argument [-Wformat=]
+     printf("Elemento numero %d en mi stackChar: %c\n", *((char*) stack_pop(myCharStack)));
+                                                  ^
+gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
+10:32:22 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
+gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
+>>>>>>> 296d4c8ac4ac9277d8c65c3b1ff8237fc9f0fdba
