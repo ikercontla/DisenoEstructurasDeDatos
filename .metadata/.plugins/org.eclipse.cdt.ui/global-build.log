@@ -1,66 +1,95 @@
-11:26:50 **** Clean-only build of configuration Debug for project 06EjercicioClase6 ****
-rm -rf EjercicioClase6.d 06EjercicioClase6.exe EjercicioClase6.o 
-11:27:03 **** Rebuild of configuration Debug for project 06EjercicioClase6 ****
+16:10:54 **** Incremental Build of configuration Debug for project Repaso02 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-Info: Nothing to build for 06EjercicioClase6
-11:33:46 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:34:12 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:34:37 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:36:21 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:36:37 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:44:37 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-..\EjercicioClase6.c:76:43: error: unknown type name 'R'
- void printTransposedMatrix(int ** matrix, R, C);
-                                           ^
-..\EjercicioClase6.c:76:46: error: unknown type name 'C'
- void printTransposedMatrix(int ** matrix, R, C);
-                                              ^
-..\EjercicioClase6.c:77:2: error: expected identifier or '(' before 'for'
-  for (int i = 0; i<C; i++) {
-  ^~~
-..\EjercicioClase6.c:77:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
-  for (int i = 0; i<C; i++) {
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o repaso.o "..\\repaso.c" 
+..\repaso.c:13:21: error: initializer element is not constant
+ int** myIntMatrix = (int**) malloc(10 * sizeof(int*));
+                     ^
+..\repaso.c:15:1: error: expected identifier or '(' before 'for'
+ for (int i = 0; i < 10; i ++) {
+ ^~~
+..\repaso.c:15:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int i = 0; i < 10; i ++) {
                    ^
-..\EjercicioClase6.c:77:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
-  for (int i = 0; i<C; i++) {
-                        ^~
-..\EjercicioClase6.c: In function 'main':
-..\EjercicioClase6.c:104:5: warning: implicit declaration of function 'printTransposedMatrix' [-Wimplicit-function-declaration]
-     printTransposedMatrix(myIntMatrix, R, C);
-     ^~~~~~~~~~~~~~~~~~~~~
-11:44:58 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-..\EjercicioClase6.c:76:43: error: unknown type name 'R'
- void printTransposedMatrix(int ** matrix, R, C) {
-                                           ^
-..\EjercicioClase6.c:76:46: error: unknown type name 'C'
- void printTransposedMatrix(int ** matrix, R, C) {
-                                              ^
-11:45:49 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
-11:46:55 **** Incremental Build of configuration Debug for project 06EjercicioClase6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EjercicioClase6.o "..\\EjercicioClase6.c" 
-gcc -o 06EjercicioClase6.exe EjercicioClase6.o 
+..\repaso.c:15:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int i = 0; i < 10; i ++) {
+                           ^~
+..\repaso.c:21:1: error: expected identifier or '(' before 'for'
+ for (int i = 0; i < 10; i ++) {
+ ^~~
+..\repaso.c:21:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int i = 0; i < 10; i ++) {
+                   ^
+..\repaso.c:21:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int i = 0; i < 10; i ++) {
+                           ^~
+..\repaso.c:26:1: error: expected identifier or '(' before 'for'
+ for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
+ ^~~
+..\repaso.c:26:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
+                   ^
+..\repaso.c:26:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
+                           ^~
+..\repaso.c:27:1: warning: data definition has no type or storage class
+ free(myIntMatrix);
+ ^~~~
+..\repaso.c:27:1: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+..\repaso.c:27:1: warning: parameter names (without types) in function declaration
+..\repaso.c:27:1: error: conflicting types for 'free'
+In file included from ..\repaso.c:8:
+C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:502:16: note: previous declaration of 'free' was here
+   void __cdecl free(void *_Memory);
+                ^~~~
+..\repaso.c:32:22: error: initializer element is not constant
+ char*** myCharCube = (char***) malloc(10 * sizeof(char**));
+                      ^
+..\repaso.c:34:1: error: expected identifier or '(' before 'for'
+ for (int i = 0; i < 10; i ++) {
+ ^~~
+..\repaso.c:34:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int i = 0; i < 10; i ++) {
+                   ^
+..\repaso.c:34:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int i = 0; i < 10; i ++) {
+                           ^~
+..\repaso.c:41:1: error: expected identifier or '(' before 'for'
+ for (int x = 0; x < 10; x ++) {
+ ^~~
+..\repaso.c:41:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int x = 0; x < 10; x ++) {
+                   ^
+..\repaso.c:41:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int x = 0; x < 10; x ++) {
+                           ^~
+..\repaso.c:49:1: error: expected identifier or '(' before 'for'
+ for (int x = 0; x < 10; x ++) {
+ ^~~
+..\repaso.c:49:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int x = 0; x < 10; x ++) {
+                   ^
+..\repaso.c:49:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int x = 0; x < 10; x ++) {
+                           ^~
+..\repaso.c:59:1: error: expected identifier or '(' before 'for'
+ for (int x = 0; x < 10; x ++) {
+ ^~~
+..\repaso.c:59:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+ for (int x = 0; x < 10; x ++) {
+                   ^
+..\repaso.c:59:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+ for (int x = 0; x < 10; x ++) {
+                           ^~
+..\repaso.c:66:1: warning: data definition has no type or storage class
+ free(myCharCube);
+ ^~~~
+..\repaso.c:66:1: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+..\repaso.c:66:1: warning: parameter names (without types) in function declaration
+..\repaso.c:66:1: error: conflicting types for 'free'
+In file included from ..\repaso.c:8:
+C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:502:16: note: previous declaration of 'free' was here
+   void __cdecl free(void *_Memory);
+                ^~~~
+..\repaso.c:89:17: error: unknown type name 'Queue'
+ char queue_poll(Queue q) {
+                 ^~~~~
