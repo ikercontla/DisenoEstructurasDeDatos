@@ -12,6 +12,7 @@
 typedef struct strQueue* Queue;
 typedef void* Type;
 typedef enum { False, True } Bool;
+typedef void (*print)(Type);
 
 //metodos a definir
 
@@ -25,12 +26,13 @@ typedef enum { False, True } Bool;
 //void queue_destroy(Queue); Elimina a todos los nodos y a la cola misma
 
 
-Queue queue_create();
+Queue queue_create(print);
 int queue_size(Queue);
 Bool queue_isEmpty(Queue);
 Type queue_peek (Queue);
-void queue_offer(Queue, Type);
+void queue_offer(Type, Queue);
 Type queue_poll(Queue);
 void queue_destroy(Queue);
+void queue_print(Queue);
 
 #endif /* QUEUE_H_ */

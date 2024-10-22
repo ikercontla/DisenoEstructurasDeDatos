@@ -21,13 +21,15 @@ typedef struct strNode* Node;
 struct strQueue {
 	struct strNode *first, *last;
 	int size;
+	print pf;
 };
 
-Queue queue_create() {
+Queue queue_create(print pf) {
 	Queue q = (struct strQueue*) malloc(sizeof(struct strQueue));
 	q->first = NULL;
 	q->last = NULL;
 	q->size = 0;
+	q->pf = pf;
 	return q;
 }
 
@@ -99,5 +101,14 @@ void queue_destroy(Queue q) {
 		free(n);
 	}
 	free(q);
+}
+
+void queue_print(Queue q){
+	Node n = q->first;
+	while (n != NULL) {
+		q->pf(n->data);
+		n = n->next;
+	}
+	printf("\n");
 }
 
