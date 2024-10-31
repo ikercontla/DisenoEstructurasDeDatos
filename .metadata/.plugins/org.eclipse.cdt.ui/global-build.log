@@ -1,144 +1,16 @@
-<<<<<<< HEAD
-11:04:35 **** Incremental Build of configuration Debug for project 09EjercicioClase9 ****
-=======
-<<<<<<< HEAD
-16:10:54 **** Incremental Build of configuration Debug for project Repaso02 ****
+10:31:49 **** Incremental Build of configuration Debug for project 12EjercicioClase12 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o repaso.o "..\\repaso.c" 
-..\repaso.c:13:21: error: initializer element is not constant
- int** myIntMatrix = (int**) malloc(10 * sizeof(int*));
-                     ^
-..\repaso.c:15:1: error: expected identifier or '(' before 'for'
- for (int i = 0; i < 10; i ++) {
- ^~~
-..\repaso.c:15:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int i = 0; i < 10; i ++) {
-                   ^
-..\repaso.c:15:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int i = 0; i < 10; i ++) {
-                           ^~
-..\repaso.c:21:1: error: expected identifier or '(' before 'for'
- for (int i = 0; i < 10; i ++) {
- ^~~
-..\repaso.c:21:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int i = 0; i < 10; i ++) {
-                   ^
-..\repaso.c:21:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int i = 0; i < 10; i ++) {
-                           ^~
-..\repaso.c:26:1: error: expected identifier or '(' before 'for'
- for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
- ^~~
-..\repaso.c:26:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
-                   ^
-..\repaso.c:26:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int i = 0; i < 10; i ++) free(myIntMatrix[i]);
-                           ^~
-..\repaso.c:27:1: warning: data definition has no type or storage class
- free(myIntMatrix);
- ^~~~
-..\repaso.c:27:1: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
-..\repaso.c:27:1: warning: parameter names (without types) in function declaration
-..\repaso.c:27:1: error: conflicting types for 'free'
-In file included from ..\repaso.c:8:
-C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:502:16: note: previous declaration of 'free' was here
-   void __cdecl free(void *_Memory);
-                ^~~~
-..\repaso.c:32:22: error: initializer element is not constant
- char*** myCharCube = (char***) malloc(10 * sizeof(char**));
-                      ^
-..\repaso.c:34:1: error: expected identifier or '(' before 'for'
- for (int i = 0; i < 10; i ++) {
- ^~~
-..\repaso.c:34:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int i = 0; i < 10; i ++) {
-                   ^
-..\repaso.c:34:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int i = 0; i < 10; i ++) {
-                           ^~
-..\repaso.c:41:1: error: expected identifier or '(' before 'for'
- for (int x = 0; x < 10; x ++) {
- ^~~
-..\repaso.c:41:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int x = 0; x < 10; x ++) {
-                   ^
-..\repaso.c:41:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int x = 0; x < 10; x ++) {
-                           ^~
-..\repaso.c:49:1: error: expected identifier or '(' before 'for'
- for (int x = 0; x < 10; x ++) {
- ^~~
-..\repaso.c:49:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int x = 0; x < 10; x ++) {
-                   ^
-..\repaso.c:49:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int x = 0; x < 10; x ++) {
-                           ^~
-..\repaso.c:59:1: error: expected identifier or '(' before 'for'
- for (int x = 0; x < 10; x ++) {
- ^~~
-..\repaso.c:59:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
- for (int x = 0; x < 10; x ++) {
-                   ^
-..\repaso.c:59:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
- for (int x = 0; x < 10; x ++) {
-                           ^~
-..\repaso.c:66:1: warning: data definition has no type or storage class
- free(myCharCube);
- ^~~~
-..\repaso.c:66:1: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
-..\repaso.c:66:1: warning: parameter names (without types) in function declaration
-..\repaso.c:66:1: error: conflicting types for 'free'
-In file included from ..\repaso.c:8:
-C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:502:16: note: previous declaration of 'free' was here
-   void __cdecl free(void *_Memory);
-                ^~~~
-..\repaso.c:89:17: error: unknown type name 'Queue'
- char queue_poll(Queue q) {
-                 ^~~~~
-=======
-11:51:08 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
->>>>>>> 9df9c6204c85c9016e0e2fd7f92956924ebf5958
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseQueue.o "..\\UseQueue.c" 
-In file included from ..\UseQueue.c:9:0:
-c:\mingw\include\stdio.h:454:38: error: 'printf' redeclared as different kind of symbol
- _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
-                                      ^~~~~~
-In file included from ..\UseQueue.c:7:0:
-..\queue.h:15:16: note: previous declaration of 'printf' was here
- typedef void (*printf)(Type);
-                ^~~~~~
-11:33:00 **** Incremental Build of configuration Debug for project 09EjercicioClase9 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseQueue.o "..\\UseQueue.c" 
-..\UseQueue.c: In function 'printInt':
-..\UseQueue.c:12:14: error: invalid operands to binary * (have 'char *' and 'int *')
-  printf("d " *(int*)e);
-         ~~~~ ^~~~~~~~
-11:33:13 **** Incremental Build of configuration Debug for project 09EjercicioClase9 ****
-Info: Internal Builder is used for build
-<<<<<<< HEAD
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseQueue.o "..\\UseQueue.c" 
-..\UseQueue.c: In function 'printInt':
-..\UseQueue.c:12:15: error: invalid operands to binary * (have 'char *' and 'int *')
-  printf("%d " *(int*)e);
-         ~~~~~ ^~~~~~~~
-=======
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
-gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
-10:32:12 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
-..\UseStack.c: In function 'main':
-..\UseStack.c:31:50: warning: format '%c' expects a matching 'int' argument [-Wformat=]
-     printf("Elemento numero %d en mi stackChar: %c\n", *((char*) stack_pop(myCharStack)));
-                                                  ^
-gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
-10:32:22 **** Incremental Build of configuration Debug for project 08EjercicioClase8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o UseStack.o "..\\UseStack.c" 
-gcc -o 08EjercicioClase8.exe Stack.o UseStack.o 
->>>>>>> 296d4c8ac4ac9277d8c65c3b1ff8237fc9f0fdba
->>>>>>> 9df9c6204c85c9016e0e2fd7f92956924ebf5958
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o list.o "..\\list.c" 
+..\list.c: In function 'list_get':
+..\list.c:69:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+        printf(":( ");
+        ^~~~~~
+..\list.c:69:8: warning: incompatible implicit declaration of built-in function 'printf'
+..\list.c:69:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\list.c:72:6: warning: incompatible implicit declaration of built-in function 'printf'
+      printf("\n");
+      ^~~~~~
+..\list.c:72:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+gcc -o 12EjercicioClase12.exe list.o useList.o 
+Info: Nothing to build for 12EjercicioClase12
+Info: Nothing to build for 12EjercicioClase12

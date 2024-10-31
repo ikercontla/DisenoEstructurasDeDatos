@@ -11,7 +11,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:09EjercicioClase9.exe,org.eclipse.launchbar.core.descriptorType.default\:08EjercicioClase8.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:09EjercicioClase9.exe,org.eclipse.launchbar.core.descriptorType.default\:08EjercicioClase8.exe,org.eclipse.launchbar.core.descriptorType.default\:12EjercicioClase12.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:04EjercicioClase4.exe\ (1)/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:04EjercicioClase4.exe\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

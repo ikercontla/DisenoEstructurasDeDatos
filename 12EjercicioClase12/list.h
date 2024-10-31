@@ -18,6 +18,6 @@ void list_add(List l, Type e);
 Type list_get(List l, int p);
 void list_set(List l, Type e, int p);
 Type list_remove(List l, int p);
-
+void list_insert(List l, Type e, int p);
 
 #endif /* LIST_H_ */
